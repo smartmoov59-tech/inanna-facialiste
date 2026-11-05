@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+  document.documentElement.className += ' js';
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.className += ' reduced';
+  /* Filet de sécurité : si le script principal ne démarre pas, on retire le préchargeur. */
+  setTimeout(function () { if (!window.__inanna) document.documentElement.className += ' no-intro'; }, 8000);
+</script>
+<title>Inanna · Facialiste à Digne-les-Bains — Kobido, soins du visage sur mesure</title>
+<meta name="description" content="Inanna, facialiste à Digne-les-Bains : Kobido, massage myofascial, soins du visage sur mesure, radiofréquence, micro-needling, BioRePeel. Cabine confidentielle, 11 ans d'expertise, réservation en ligne 24h/24.">
+<meta name="theme-color" content="#2A1812">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Inanna · Facialiste à Digne-les-Bains">
+<meta property="og:description" content="Kobido, soins du visage sur mesure, dermo-esthétique. Ici, le maître mot est de prendre son temps. 8 rue Colonel Payan, Digne-les-Bains.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,0..100;1,9..144,100..900,0..100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Inanna - Facialiste",
+  "alternateName": "Skin by Inanna",
+  "description": "Facialiste à Digne-les-Bains : Kobido, massage myofascial, soins du visage sur mesure, radiofréquence, micro-needling, BioRePeel, drainage lymphatique.",
+  "image": "assets/img/salon-1.jpg",
+  "telephone": "+33638051558",
+  "email": "contact@skinbyinanna.com",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8 rue Colonel Payan",
+    "postalCode": "04000",
+    "addressLocality": "Digne-les-Bains",
+    "addressRegion": "Alpes-de-Haute-Provence",
+    "addressCountry": "FR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 44.0917079, "longitude": 6.233617 },
+  "hasMap": "https://www.google.com/maps/place/Inanna+-+Facialiste/@44.0917079,6.233617,17z",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:00", "closes": "17:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "13:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/skinby.inanna/",
+    "https://www.facebook.com/skinby.inanna/",
+    "https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains"
+  ]
+}
+</script>
+</head>
+
+<body>
+<!-- Symboles SVG réutilisés (fil rouge : l'arche et l'étoile à huit branches) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="star" viewBox="-50 -50 100 100"><path d="M0-48 9-9 48 0 9 9 0 48-9 9-48 0-9-9Z"/><path transform="rotate(45)" d="M0-34 7-7 34 0 7 7 0 34-7 7-34 0-7-7Z"/></symbol>
+    <symbol id="leaf" viewBox="0 0 100 150"><path d="M50 148C6 108 2 52 50 2c48 50 44 106 0 146Z"/><path d="M50 148V26" fill="none" stroke="rgba(0,0,0,.28)" stroke-width="2"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+
+<!-- ============ PRÉCHARGEUR ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__mark">
+      <svg class="loader__arch" viewBox="0 0 120 160" fill="none" stroke="currentColor" stroke-width="1.4"><path pathLength="1" d="M8 154V68a52 52 0 0 1 104 0v86Z"/></svg>
+      <svg class="loader__star" viewBox="0 0 100 100" fill="currentColor"><use href="#star"/></svg>
+    </div>
+    <div class="loader__name" aria-hidden="true"><span class="ch">I</span><span class="ch">n</span><span class="ch">a</span><span class="ch">n</span><span class="ch">n</span><span class="ch">a</span></div>
+    <div class="loader__count"><span id="loaderCount">000</span></div>
+  </div>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a class="logo" href="#top" aria-label="Inanna, retour en haut">
+      <svg class="logo__star" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#star"/></svg>
+      <span>Inanna</span>
+    </a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a class="ulink" href="#univers">L'univers</a>
+      <a class="ulink" href="#soins">Les soins</a>
+      <a class="ulink" href="#carte">Tarifs</a>
+      <a class="ulink" href="#avis">Avis</a>
+      <a class="ulink" href="#infos">Infos</a>
+    </nav>
+    <a class="btn btn--sm btn--terra nav__cta" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener"><span class="btn__in">Réserver</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__in">
+    <nav aria-label="Menu mobile">
+      <a href="#univers"><span>01</span>L'univers</a>
+      <a href="#soins"><span>02</span>Les soins</a>
+      <a href="#carte"><span>03</span>Tarifs</a>
+      <a href="#avis"><span>04</span>Avis</a>
+      <a href="#cadeau"><span>05</span>Carte cadeau</a>
+      <a href="#infos"><span>06</span>Nous trouver</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--gold" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener"><span class="btn__in">Réserver en ligne</span></a>
+      <a class="menu__tel" href="tel:+33638051558">06 38 05 15 58</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-label="Accueil">
+  <div class="hero__media" id="heroMedia">
+    <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/video/hero.jpg" aria-hidden="true">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__tint"></div>
+  </div>
+
+  <div class="hero__layers" aria-hidden="true">
+    <svg class="hero__arch" viewBox="0 0 100 150" preserveAspectRatio="none" fill="none" stroke="currentColor"><path vector-effect="non-scaling-stroke" d="M1 149V50a49 49 0 0 1 98 0v99Z"/></svg>
+    <svg class="hero__star hero__star--a" viewBox="0 0 100 100" fill="currentColor"><use href="#star"/></svg>
+    <svg class="hero__star hero__star--b" viewBox="0 0 100 100" fill="currentColor"><use href="#star"/></svg>
+    <svg class="hero__star hero__star--c" viewBox="0 0 100 100" fill="currentColor"><use href="#star"/></svg>
+    <div class="hero__leaves hero__leaves--l">
+      <svg class="leaf leaf--1" viewBox="0 0 100 150" fill="currentColor"><use href="#leaf"/></svg>
+      <svg class="leaf leaf--2" viewBox="0 0 100 150" fill="currentColor"><use href="#leaf"/></svg>
+      <svg class="leaf leaf--3" viewBox="0 0 100 150" fill="currentColor"><use href="#leaf"/></svg>
+    </div>
+    <div class="hero__leaves hero__leaves--r">
+      <svg class="leaf leaf--1" viewBox="0 0 100 150" fill="currentColor"><use href="#leaf"/></svg>
+      <svg class="leaf leaf--2" viewBox="0 0 100 150" fill="currentColor"><use href="#leaf"/></svg>
+    </div>
+  </div>
+
+  <div class="hero__content">
+    <p class="hero__kicker" data-hero-in><span class="dotlive"></span> Facialiste · Digne-les-Bains</p>
+    <h1 class="hero__title" aria-label="Inanna">
+      <span class="hero__title-mask" aria-hidden="true"><span class="ch">I</span><span class="ch">n</span><span class="ch">a</span><span class="ch">n</span><span class="ch">n</span><span class="ch">a</span></span>
+    </h1>
+    <div class="hero__row">
+      <p class="hero__sub" data-hero-in>Ici, le maître mot est de <em>prendre son temps</em>. Un visage, deux mains, une cabine dorée et un soin construit rien que pour vous.</p>
+      <div class="hero__cta" data-hero-in>
+        <a class="btn btn--gold magnetic" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener" data-cursor="Planity"><span class="btn__in">Réserver mon soin <svg class="ico"><use href="#arrow"/></svg></span></a>
+        <a class="btn btn--ghost magnetic" href="tel:+33638051558"><span class="btn__in">06 38 05 15 58</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__meta" data-hero-in>
+    <a class="chip" href="#avis"><span class="chip__stars" aria-hidden="true">★★★★★</span> 5,0 · 187 avis</a>
+    <span class="chip chip--status" id="openChip" aria-live="polite">Cabine sur rendez-vous</span>
+    <span class="scrollcue" aria-hidden="true"><i></i>Défiler</span>
+  </div>
+</section>
+
+<!-- ============ MARQUEES ============ -->
+<section class="marquees" aria-label="Spécialités">
+  <div class="marquee marquee--a" data-dir="-1" data-speed="1.1">
+    <div class="marquee__track" aria-hidden="true">
+      <span>Kobido</span><svg class="mstar"><use href="#star"/></svg><span>Massage myofascial</span><svg class="mstar"><use href="#star"/></svg><span>Intrabuccal</span><svg class="mstar"><use href="#star"/></svg><span>Radiofréquence</span><svg class="mstar"><use href="#star"/></svg><span>Micro-needling</span><svg class="mstar"><use href="#star"/></svg><span>BioRePeel</span><svg class="mstar"><use href="#star"/></svg><span>Drainage lymphatique</span><svg class="mstar"><use href="#star"/></svg><span>LED</span><svg class="mstar"><use href="#star"/></svg><span>Gua sha</span><svg class="mstar"><use href="#star"/></svg>
+    </div>
+    <p class="sr">Kobido, massage myofascial, intrabuccal, radiofréquence, micro-needling, BioRePeel, drainage lymphatique, LED, gua sha.</p>
+  </div>
+  <div class="marquee marquee--b" data-dir="1" data-speed="0.8">
+    <div class="marquee__track" aria-hidden="true">
+      <span>Prendre son temps</span><svg class="mstar"><use href="#star"/></svg><span>Sur mesure</span><svg class="mstar"><use href="#star"/></svg><span>11 ans d'expertise</span><svg class="mstar"><use href="#star"/></svg><span>Cabine confidentielle</span><svg class="mstar"><use href="#star"/></svg><span>Digne-les-Bains</span><svg class="mstar"><use href="#star"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ L'UNIVERS (storytelling épinglé) ============ -->
+<section class="story" id="univers" aria-labelledby="storyTitle">
+  <div class="story__pin">
+    <div class="story__left">
+      <div class="story__frame">
+        <div class="story__glow" aria-hidden="true"></div>
+        <img class="story__img" src="assets/img/salon-7.jpg" alt="Coin accueil de la cabine Inanna : fauteuil en rotin, bureau clair, grandes fenêtres et étagères de flacons sur mur terracotta" width="2000" height="924" style="object-position:84% 50%">
+        <img class="story__img" src="assets/img/salon-2.jpg" alt="Table de soin habillée de lin beige devant une cheminée en marbre, miroir en arche et lumière dorée" width="2000" height="1500" style="object-position:55% 50%" loading="lazy">
+        <img class="story__img" src="assets/img/salon-5.jpg" alt="Masque LED NOOANCE allumé en rouge au-dessus de la table de soin" width="2000" height="924" style="object-position:34% 50%" loading="lazy">
+        <img class="story__img" src="assets/img/salon-4.jpg" alt="Cabine plongée dans une lumière dorée : miroir en arche, cheminée, pots de masques et plantes" width="2000" height="924" style="object-position:62% 50%" loading="lazy">
+      </div>
+      <svg class="story__badge" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+        <text><textPath href="#circ" startOffset="0">Prendre son temps ✦ Prendre son temps ✦ </textPath></text>
+        <use href="#star" x="42" y="42" width="36" height="36"/>
+      </svg>
+    </div>
+    <div class="story__right">
+      <p class="eyebrow">L'univers</p>
+      <h2 class="h2" id="storyTitle" data-split>Une cabine, deux mains, <em>tout votre temps.</em></h2>
+      <ol class="story__steps">
+        <li class="step">
+          <span class="step__n" aria-hidden="true">01</span>
+          <h3>On commence par parler</h3>
+          <p>Pas de protocole plaqué sur votre visage. Chaque soin s'ouvre par un temps d'échange : votre peau, votre routine, vos envies du jour. Apportez vos produits, posez vos questions : le déroulé s'ajuste à vous, jamais l'inverse.</p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">02</span>
+          <h3>Des mains qui savent</h3>
+          <p>Formée au Kobido, aux techniques myofasciales et à celles d'Europe de l'Est, Clem privilégie les gestes enveloppants et profonds. Onze ans d'expertise au bout des doigts, pour un moment suspendu où l'on oublie le reste du corps.</p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">03</span>
+          <h3>La technologie, quand elle sert</h3>
+          <p>Radiofréquence, micro-needling, BioRePeel, électroporation, LED NOOANCE : plus le soin est long, plus le travail va en profondeur et plus la technologie s'invite. Jamais pour faire joli, toujours avec une raison.</p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">04</span>
+          <h3>Le glow, puis le silence</h3>
+          <p>Lumière dorée, plantes, téléphone éteint. Votre soin dure peut-être une heure, vous resterez peut-être une heure et demie. On ne vous demande qu'une chose : lâcher prise. Le teint lumineux, lui, se charge du reste.</p>
+        </li>
+      </ol>
+      <div class="story__progress" aria-hidden="true"><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITATION (vidéo + mots qui s'allument) ============ -->
+<section class="quote" aria-label="Manifeste">
+  <video class="quote__video" autoplay muted loop playsinline preload="none" poster="assets/video/orange.jpg" aria-hidden="true">
+    <source data-src="assets/video/orange.mp4" type="video/mp4">
+  </video>
+  <div class="quote__shade" aria-hidden="true"></div>
+  <div class="wrap quote__wrap">
+    <p class="quote__text" id="quoteText">Un soin du visage n'est pas un protocole. C'est une conversation entre vos traits et deux mains qui écoutent.</p>
+  </div>
+</section>
+
+<!-- ============ SOINS SIGNATURE (défilement horizontal) ============ -->
+<section class="hscroll" id="soins" aria-labelledby="soinsTitle">
+  <div class="hscroll__pin">
+    <header class="hscroll__head">
+      <div>
+        <p class="eyebrow">Les soins signature</p>
+        <h2 class="h2" id="soinsTitle" data-split>Votre peau, <em>votre temps.</em><br>Notre expertise.</h2>
+      </div>
+      <p class="hscroll__lead">Du massage express au grand rituel de deux heures : vous choisissez le budget et la durée, Inanna s'occupe du reste. <span class="hscroll__hint">Faites défiler <svg class="ico"><use href="#arrow"/></svg></span></p>
+    </header>
+
+    <div class="hscroll__viewport">
+      <ul class="hscroll__track">
+
+        <li class="card card--gold tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/peel.jpg" alt="Application d'un masque au pinceau sur le visage d'une cliente allongée" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Offre du mois</span></div>
+          <div class="card__body">
+            <p class="card__tag">Soin exclusif · 30 min</p>
+            <h3>Le Peel</h3>
+            <p>Un soin express qui associe le peeling KRX à une infusion d'actifs : fraîcheur et éclat, sans brusquer la peau.</p>
+            <div class="card__foot"><span class="card__price">50 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--rose tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/gua-sha.jpg" alt="Femme utilisant deux pierres de gua sha sur son visage, entourée de plantes vertes" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Soin éphémère</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · de novembre à mars</p>
+            <h3>Pochons chauds &amp; Gua Sha</h3>
+            <p>La chaleur de pochons d'avoine, lavande, pensée sauvage, bardane et thym, la fraîcheur de la pierre de gua sha : on détend, on draine, on illumine.</p>
+            <div class="card__foot"><span class="card__price">95 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--terra tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/eclat.jpg" alt="Massage du front et des tempes d'une cliente allongée, les yeux fermés" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Massage visage</span></div>
+          <div class="card__body">
+            <p class="card__tag">30 min · relaxant ou tonique</p>
+            <h3>L'Éclat</h3>
+            <p>Un massage ciblé pour relâcher les tensions et réveiller les traits en un temps court. Relaxant pour apaiser, tonique pour redonner de l'énergie au visage.</p>
+            <div class="card__foot"><span class="card__price">50 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--cream tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/kobido.jpg" alt="Cliente allongée recevant un massage du visage, les mains de la praticienne de chaque côté de sa tête" width="800" height="1000" loading="lazy" decoding="async" style="object-position:50% 28%"><span class="card__badge">Massage visage</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · art japonais</p>
+            <h3>Le Kobido</h3>
+            <p>Plus qu'un massage anti-âge : un art ancestral japonais qui stimule muscles et tissus du visage, de la surface à la profondeur. Éclat, tonicité, vitalité.</p>
+            <div class="card__foot"><span class="card__price">90 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--leaf tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/specifique.jpg" alt="Mains pressant la racine du nez et le front pendant un massage du visage ciblé" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Massage visage</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · 100 % personnalisé</p>
+            <h3>Le Spécifique</h3>
+            <p>Entièrement personnalisé : à la fois profond, enveloppant et ciblé, il relâche durablement les tensions et redessine les contours.</p>
+            <div class="card__foot"><span class="card__price">90 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--cacao tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/essentiel.jpg" alt="Soin du visage : masque blanc appliqué au pinceau sur une cliente en bandeau turquoise" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Soin visage</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · sur mesure</p>
+            <h3>L'Essentiel</h3>
+            <p>Le cœur de la carte : un temps d'échange pour comprendre votre peau, puis un soin construit pour elle, avec vos produits en tête.</p>
+            <div class="card__foot"><span class="card__price">100 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--rose tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/profond.jpg" alt="Masque crème appliqué sur le visage d'une cliente pendant un soin en profondeur" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Soin visage</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h30 · en profondeur</p>
+            <h3>Le Profond</h3>
+            <p>Plus de temps, un travail plus en profondeur et l'ajout de technologie. Pour celles et ceux qui veulent aller au fond des choses.</p>
+            <div class="card__foot"><span class="card__price">150 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--gold tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/ultime.jpg" alt="Portrait d'une femme à la peau lumineuse, la main posée sur la joue" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Le grand rituel</span></div>
+          <div class="card__body">
+            <p class="card__tag">2h00 · carte blanche</p>
+            <h3>L'Ultime</h3>
+            <p>La crème de la crème en matière d'expertise, de gestuelle, d'actifs, de lâcher-prise et de sensorialité.</p>
+            <div class="card__foot"><span class="card__price">200 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--cream tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/oxylift.jpg" alt="Cliente avec un rouleau de massage en cristal sur le visage pendant un soin" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Dermo-esthétique</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · oxygénation</p>
+            <h3>L'Oxylift</h3>
+            <p>Masque Carboxy qui stimule la micro-circulation, électroporation qui scelle l'hydratation : une peau repulpée, lumineuse, visiblement liftée.</p>
+            <div class="card__foot"><span class="card__price">110 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--leaf tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/micro-needling.jpg" alt="Stylo de micro-needling passé sur la joue d'une cliente" width="800" height="1000" loading="lazy" decoding="async" style="object-position:50% 22%"><span class="card__badge">Dermo-esthétique</span></div>
+          <div class="card__body">
+            <p class="card__tag">1h00 · cure à 99 € la séance</p>
+            <h3>L'Effet Micro-needling</h3>
+            <p>Des micro-perforations de moins d'1 mm pour faire pénétrer les actifs et stimuler le collagène : grain de peau affiné, pores resserrés.</p>
+            <div class="card__foot"><span class="card__price">110 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--terra tilt" data-cursor="Découvrir">
+          <span class="glare" aria-hidden="true"></span>
+          <div class="card__photo"><img src="assets/img/soins/drainant.jpg" alt="Mains réalisant un massage drainant sur une serviette blanche" width="800" height="1000" loading="lazy" decoding="async"><span class="card__badge">Rituel corps</span></div>
+          <div class="card__body">
+            <p class="card__tag">Méthode Renata França</p>
+            <h3>Le Drainant</h3>
+            <p>Il stimule la circulation, réduit les gonflements et favorise l'élimination des toxines. Pour jambes lourdes, corps serré et fatigué.</p>
+            <div class="card__foot"><span class="card__price">130 €</span><a class="card__link" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver <svg class="ico"><use href="#arrow"/></svg></a></div>
+          </div>
+        </li>
+
+        <li class="card card--end" data-cursor="Tarifs">
+          <a class="card__endlink" href="#carte">
+            <span class="card__endnum">+</span>
+            <span>Voir la carte complète<br>et tous les tarifs</span>
+            <svg class="ico ico--lg"><use href="#arrow"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="hscroll__bar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<!-- ============ CHIFFRES CLÉS ============ -->
+<section class="stats" aria-label="Chiffres clés">
+  <svg class="stats__star" viewBox="0 0 100 100" aria-hidden="true"><use href="#star"/></svg>
+  <div class="wrap">
+    <p class="eyebrow eyebrow--gold">En quelques chiffres</p>
+    <ul class="stats__grid">
+      <li><span class="stat__n"><b data-count="11">0</b></span><span class="stat__l">ans d'expertise<br>du soin du visage</span></li>
+      <li><span class="stat__n"><b data-count="5" data-decimals="1">0</b><small>/5</small></span><span class="stat__l">de note moyenne,<br>sur Planity et Google</span></li>
+      <li><span class="stat__n"><b data-count="266">0</b></span><span class="stat__l">avis de client·es<br>(187 Planity, 79 Google)</span></li>
+      <li><span class="stat__n"><b data-count="17">0</b></span><span class="stat__l">soins à la carte,<br>tous sur mesure</span></li>
+    </ul>
+    <div class="stats__products">
+      <div>
+        <p class="eyebrow eyebrow--gold">Dans la cabine</p>
+        <h3>KRX, de Corée</h3>
+        <p>La marque coréenne KRX accompagne chacun des soins du visage.</p>
+      </div>
+      <div>
+        <p class="eyebrow eyebrow--gold">À emporter chez vous</p>
+        <h3>Milefolia, d'Entrages</h3>
+        <p>Fabriquée à Entrages, à 20 minutes en voiture, Milefolia accompagne les massages et se vend sur place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LA CARTE (tarifs) ============ -->
+<section class="carte" id="carte" aria-labelledby="carteTitle">
+  <div class="wrap">
+    <header class="carte__head">
+      <p class="eyebrow">Les tarifs</p>
+      <h2 class="h2" id="carteTitle" data-split>La carte, <em>en toute clarté.</em></h2>
+      <p class="carte__lead">Réservation en ligne 24h/24 avec confirmation immédiate. Paiement intégral à la réservation.</p>
+    </header>
+
+    <div class="carte__layout">
+      <div class="tabs" role="tablist" aria-label="Catégories de soins">
+        <button class="tab" role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" type="button"><span>01</span> Offres du mois</button>
+        <button class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" type="button"><span>02</span> Massage visage</button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" type="button"><span>03</span> Soin visage</button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" type="button"><span>04</span> Dermo-esthétique</button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" type="button"><span>05</span> Rituel corps</button>
+      </div>
+
+      <div class="panels">
+        <div class="panel" id="panel-0" role="tabpanel" aria-labelledby="tab-0">
+          <h3 class="panel__title">Les offres du mois</h3>
+          <ul class="rows">
+            <li class="row"><div class="row__main"><h4>Le Peel</h4><p>Soin exclusif : peeling KRX et infusion d'actifs, fraîcheur et éclat sans brusquer la peau.</p></div><span class="row__dur">30 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">50 €</span></li>
+            <li class="row"><div class="row__main"><h4>Pochons chauds &amp; Gua Sha</h4><p>Soin éphémère, de novembre à mars. Idéal avec l'option Masque pour sceller l'hydratation.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">95 €</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1" hidden>
+          <h3 class="panel__title">Massage visage</h3>
+          <p class="panel__intro">Formée au Kobido, aux techniques myofasciales et à celles d'Europe de l'Est : le sur-mesure, des gestes enveloppants et profonds.</p>
+          <ul class="rows">
+            <li class="row"><div class="row__main"><h4>L'Éclat</h4><p>Ciblé, en version relaxante ou tonique.</p></div><span class="row__dur">30 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">50 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Kobido</h4><p>L'art ancestral japonais, de la surface à la profondeur.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">90 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Spécifique</h4><p>Entièrement personnalisé, profond, enveloppant et ciblé.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">90 €</span></li>
+            <li class="row row--opt"><div class="row__main"><h4>Option Ventouses</h4><p>Aspiration contrôlée : circulation, drainage, éclat.</p></div><span class="row__dur">10 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">+10 €</span></li>
+            <li class="row row--opt"><div class="row__main"><h4>Option LED by NOOANCE</h4><p>780 LED, deux modes : anti-âge ou peau nette. Lunettes de protection fournies.</p></div><span class="row__dur">10 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">+10 €</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+          <h3 class="panel__title">Soin visage</h3>
+          <p class="panel__intro">Vous choisissez le budget et le temps qui vous conviennent. Plus de temps, c'est un travail plus en profondeur et l'ajout de technologie.</p>
+          <ul class="rows">
+            <li class="row"><div class="row__main"><h4>L'Initial</h4><p>Le soin du visage en format court, construit sur mesure.</p></div><span class="row__dur">40 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">68 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Essentiel</h4><p>Le soin sur mesure, au cœur de la carte.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">100 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Intense</h4><p>Plus de temps pour un travail plus approfondi.</p></div><span class="row__dur">1h15</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">125 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Profond</h4><p>Travail en profondeur et technologie.</p></div><span class="row__dur">1h30</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">150 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Ultime</h4><p>Expertise, gestuelle, actifs, lâcher-prise et sensorialité.</p></div><span class="row__dur">2h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">200 €</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+          <h3 class="panel__title">Soin dermo-esthétique</h3>
+          <p class="panel__intro">Des soins experts pour travailler au cœur des cellules. Certains soins ne sont pas accessibles sans un premier rendez-vous en amont.</p>
+          <ul class="rows">
+            <li class="row"><div class="row__main"><h4>BioRePeel</h4><p>Peeling doux sans desquamation : éclat, grain de peau affiné, sans éviction sociale.</p></div><span class="row__dur">45 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">80 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Oxylift</h4><p>Masque Carboxy et électroporation. Ni massage, ni extraction.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">110 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Effet Micro-needling</h4><p>Nanoneedling ou microneedling selon les besoins. En cure : 99 € la séance.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">110 €</span></li>
+            <li class="row"><div class="row__main"><h4>Peeling aux Algues</h4><p>Micro-algues marines KRX. Non réservable en première visite ; crème Cica (38 €) obligatoire pour les soins à la maison.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">110 €</span></li>
+            <li class="row row--opt"><div class="row__main"><h4>Option Décolleté</h4><p>Uniquement en complément du BioRePeel, du micro-needling ou du peeling aux algues.</p></div><span class="row__dur">15 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">+20 €</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+          <h3 class="panel__title">Rituel corps</h3>
+          <p class="panel__intro">Un temps de discussion ouvre le soin. Précisez la pression, la température de la cabine, le volume de la musique : vous êtes là pour profiter.</p>
+          <ul class="rows">
+            <li class="row"><div class="row__main"><h4>L'Apaisant</h4><p>Rituel conçu pour les enfants de 6 à 14 ans : douceur et relaxation.</p></div><span class="row__dur">30 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">45 €</span></li>
+            <li class="row"><div class="row__main"><h4>L'Enveloppant</h4><p>Massage du dos pour délier les tensions, suivi d'un massage du visage.</p></div><span class="row__dur">1h00</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">100 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Drainant · méthode Renata França</h4><p>Circulation, gonflements, jambes lourdes. En cure de 4 séances : 440 € (110 € la séance).</p></div><span class="row__dur">sur mesure</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">130 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Drainant · femme enceinte</h4><p>Allongée sur le dos, buste relevé, abdomen exclu. Se termine par un drainage du visage.</p></div><span class="row__dur">sur mesure</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">110 €</span></li>
+            <li class="row"><div class="row__main"><h4>Le Drainant Jambes</h4><p>Cure possible de 4 séances à 45 € la séance, valable deux mois.</p></div><span class="row__dur">30 min</span><span class="row__dots" aria-hidden="true"></span><span class="row__price">50 €</span></li>
+          </ul>
+        </div>
+
+        <div class="carte__cta">
+          <a class="btn btn--terra magnetic" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener"><span class="btn__in">Réserver sur Planity <svg class="ico"><use href="#arrow"/></svg></span></a>
+          <p>Un doute sur le soin ? Essayez le conseiller juste en dessous.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONSEILLER (quiz) ============ -->
+<section class="quiz" id="conseil" aria-labelledby="quizTitle">
+  <div class="wrap quiz__wrap">
+    <div class="quiz__intro">
+      <p class="eyebrow eyebrow--gold">Le conseiller</p>
+      <h2 class="h2" id="quizTitle" data-split>Quel soin <em>pour vous&nbsp;?</em></h2>
+      <p>Deux questions, une recommandation. Ensuite, on en discute ensemble pendant le temps d'échange.</p>
+    </div>
+
+    <div class="quiz__box" id="quiz" aria-live="polite">
+      <div class="quiz__step is-active" data-step="1">
+        <p class="quiz__q"><span>1/2</span> Qu'est-ce qui vous ferait du bien en ce moment&nbsp;?</p>
+        <div class="quiz__opts">
+          <button type="button" class="opt" data-goal="detente">Me détendre vraiment</button>
+          <button type="button" class="opt" data-goal="eclat">Retrouver mon éclat</button>
+          <button type="button" class="opt" data-goal="peau">Soigner ma peau</button>
+          <button type="button" class="opt" data-goal="corps">Alléger mon corps et mes jambes</button>
+        </div>
+      </div>
+      <div class="quiz__step" data-step="2">
+        <p class="quiz__q"><span>2/2</span> Combien de temps pouvez-vous vous accorder&nbsp;?</p>
+        <div class="quiz__opts">
+          <button type="button" class="opt" data-time="express">Moins d'une heure</button>
+          <button type="button" class="opt" data-time="hour">Une heure</button>
+          <button type="button" class="opt" data-time="long">Plus d'une heure</button>
+        </div>
+        <button type="button" class="quiz__back" data-back>← Retour</button>
+      </div>
+      <div class="quiz__step quiz__result" data-step="3">
+        <p class="quiz__kicker">Notre recommandation</p>
+        <h3 class="quiz__name" id="quizName">—</h3>
+        <p class="quiz__meta" id="quizMeta">—</p>
+        <p class="quiz__txt" id="quizTxt"></p>
+        <div class="quiz__actions">
+          <a class="btn btn--gold magnetic" id="quizCta" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener"><span class="btn__in">Réserver ce soin <svg class="ico"><use href="#arrow"/></svg></span></a>
+          <button type="button" class="quiz__back" data-restart>Recommencer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery" id="galerie" aria-labelledby="galTitle">
+  <div class="wrap">
+    <header class="gallery__head">
+      <p class="eyebrow">La cabine</p>
+      <h2 class="h2" id="galTitle" data-split>Là où le temps <em>ralentit.</em></h2>
+      <p>Murs terracotta, parquet clair, plantes qui débordent, guirlandes de lumière et un miroir en arche : une parenthèse à l'abri, au premier étage.</p>
+    </header>
+  </div>
+  <div class="gallery__grid">
+    <figure class="g g--1 reveal-circle" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-1.jpg" aria-label="Agrandir : la cabine vue d'ensemble"><div class="g__img"><img src="assets/img/salon-1.jpg" alt="La cabine Inanna vue d'ensemble : table de soin, cloison terracotta, miroir en arche, plantes et guirlandes lumineuses" width="2000" height="1500" loading="lazy"></div></button><figcaption>La cabine</figcaption></figure>
+    <figure class="g g--2 reveal-arch" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-4.jpg" aria-label="Agrandir : lumière dorée"><div class="g__img"><img src="assets/img/salon-4.jpg" alt="Lumière dorée sur la cheminée et le miroir en arche de la cabine" width="2000" height="924" loading="lazy" style="object-position:58% 50%"></div></button><figcaption>Lumière dorée</figcaption></figure>
+    <figure class="g g--3 reveal-curtain" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-3.jpg" aria-label="Agrandir : le coin des huiles"><div class="g__img"><img src="assets/img/salon-3.jpg" alt="Table de soin et étagère en bois brut chargée de flacons d'huiles, devant le mur terracotta" width="2000" height="1500" loading="lazy"></div></button><figcaption>Le coin des huiles</figcaption></figure>
+    <figure class="g g--4 reveal-arch" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-5.jpg" aria-label="Agrandir : le masque LED"><div class="g__img"><img src="assets/img/salon-5.jpg" alt="Masque LED NOOANCE en fonctionnement, lumière rouge" width="2000" height="924" loading="lazy" style="object-position:36% 50%"></div></button><figcaption>LED by NOOANCE</figcaption></figure>
+    <figure class="g g--5 reveal-curtain" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-6.jpg" aria-label="Agrandir : l'entrée"><div class="g__img"><img src="assets/img/salon-6.jpg" alt="Entrée de la cabine : banc en bois brut, plantes et porte vitrée ancienne" width="2000" height="924" loading="lazy" style="object-position:30% 50%"></div></button><figcaption>L'entrée</figcaption></figure>
+    <figure class="g g--6 reveal-circle" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-7.jpg" aria-label="Agrandir : les grandes fenêtres"><div class="g__img"><img src="assets/img/salon-7.jpg" alt="Grandes fenêtres drapées de voilages, étagères de flacons sur mur terracotta et fauteuil en rotin" width="2000" height="924" loading="lazy" style="object-position:60% 50%"></div></button><figcaption>Les grandes fenêtres</figcaption></figure>
+    <figure class="g g--7 reveal-arch" data-cursor="Voir"><button class="g__btn" type="button" data-lightbox="assets/img/salon-2.jpg" aria-label="Agrandir : la cheminée"><div class="g__img"><img src="assets/img/salon-2.jpg" alt="Table de soin devant une cheminée en marbre ornée de bougies et d'un miroir ancien" width="2000" height="1500" loading="lazy" style="object-position:60% 50%"></div></button><figcaption>La cheminée</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="reviews" id="avis" aria-labelledby="revTitle">
+  <div class="wrap">
+    <header class="reviews__head">
+      <div>
+        <p class="eyebrow eyebrow--gold">Les avis</p>
+        <h2 class="h2" id="revTitle" data-split>Leurs mots, <em>pas les nôtres.</em></h2>
+      </div>
+      <div class="rating">
+        <div class="rating__big"><b>5,0</b><span>sur 5</span></div>
+        <div class="rating__stars" aria-hidden="true">★★★★★</div>
+        <p>187 avis sur Planity · 79 avis sur Google</p>
+        <ul class="rating__bars">
+          <li><span>Accueil</span><i style="--v:1"></i><b>5,0</b></li>
+          <li><span>Propreté</span><i style="--v:1"></i><b>5,0</b></li>
+          <li><span>Cadre &amp; ambiance</span><i style="--v:1"></i><b>5,0</b></li>
+          <li><span>Qualité du soin</span><i style="--v:1"></i><b>5,0</b></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="car" id="car" aria-roledescription="carrousel" aria-label="Avis clients">
+      <div class="car__viewport" data-cursor="Glisser">
+        <ul class="car__track" id="carTrack">
+          <li class="rev"><span class="rev__q" aria-hidden="true">“</span><blockquote>Ambiance cocooning, accueil chaleureux, bienveillant, soin merveilleux fait par une facialiste douce, délicate, à l'écoute. Le teint est lumineux, un glow extra, je n'ai qu'une hâte : y retourner !</blockquote><footer><b>Cliente Planity</b><span>octobre 2026</span></footer></li>
+          <li class="rev rev--alt"><span class="rev__q" aria-hidden="true">“</span><blockquote>Une bulle de douceur, un moment suspendu où seules les mains de Clémence vous font oublier le reste de votre corps et tout le reste. La chaleur de la table de massage vous met dans un état de bien-être absolu.</blockquote><footer><b>Agnès S.</b><span>Avis Google · Local Guide</span></footer></li>
+          <li class="rev"><span class="rev__q" aria-hidden="true">“</span><blockquote>La pire sensation du monde : quitter cette bulle. Vivement la prochaine ! Merci pour ce travail que tu fais si bien !</blockquote><footer><b>Cliente Planity</b><span>octobre 2026</span></footer></li>
+          <li class="rev rev--alt"><span class="rev__q" aria-hidden="true">“</span><blockquote>Clémence est très professionnelle et adorable. Elle a des mains en or. Elle prend le temps et nous pose des questions pour adapter au mieux le massage. Un vrai moment pour soi… Je recommande les yeux fermés !</blockquote><footer><b>Marion P.</b><span>Avis Google · avril 2025</span></footer></li>
+          <li class="rev"><span class="rev__q" aria-hidden="true">“</span><blockquote>Tout est parfait. L'univers, le soin et ses mains. Je recommande à 1000 %.</blockquote><footer><b>Cliente Planity</b><span>septembre 2026</span></footer></li>
+          <li class="rev rev--alt"><span class="rev__q" aria-hidden="true">“</span><blockquote>Hier, j'ai vécu un moment incroyable chez Clémence. C'était la première fois que je faisais un massage du visage, un facial, avec autant de techniques différentes.</blockquote><footer><b>Valérie P.</b><span>Avis Google · décembre 2025</span></footer></li>
+          <li class="rev"><span class="rev__q" aria-hidden="true">“</span><blockquote>Très belle découverte chez Inanna en tout point. On se sent honorée par la qualité de présence et la précision des gestes pendant les soins. Je ne peux que recommander. Merci Clémence.</blockquote><footer><b>Cliente Planity</b><span>août 2026</span></footer></li>
+          <li class="rev rev--alt"><span class="rev__q" aria-hidden="true">“</span><blockquote>Un moment hors du temps ! Merci pour cette prestation de haute qualité.</blockquote><footer><b>Cliente Planity</b><span>octobre 2026</span></footer></li>
+        </ul>
+      </div>
+      <div class="car__ctrl">
+        <button class="car__btn" id="carPrev" type="button" aria-label="Avis précédent"><svg class="ico ico--flip"><use href="#arrow"/></svg></button>
+        <div class="car__line" aria-hidden="true"><i id="carLine"></i></div>
+        <button class="car__btn" id="carNext" type="button" aria-label="Avis suivant"><svg class="ico"><use href="#arrow"/></svg></button>
+      </div>
+    </div>
+
+    <p class="reviews__links">
+      <a class="ulink" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Lire tous les avis sur Planity ↗</a>
+      <a class="ulink" href="https://www.google.com/maps/place/Inanna+-+Facialiste/@44.0917079,6.233617,17z/data=!4m6!3m5!1s0x478a3b2aa0cd96b7:0x12f9cb0c03d8dc5d!8m2!3d44.0917079!4d6.233617!16s%2Fg%2F11p9zls93j" target="_blank" rel="noopener">Lire les avis Google ↗</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ CARNETS, CURES & CARTE CADEAU ============ -->
+<section class="packs" id="formules" aria-labelledby="packsTitle">
+  <div class="wrap">
+    <header class="packs__head">
+      <p class="eyebrow">Carnets &amp; cures</p>
+      <h2 class="h2" id="packsTitle" data-split>La régularité, <em>c'est là que tout change.</em></h2>
+    </header>
+    <ul class="tickets">
+      <li class="ticket">
+        <div class="ticket__main"><h3>Carnet Visage · 3 soins</h3><p>Un massage visage d'une heure chaque mois pendant 3 mois. Le soin revient à 85 € au lieu de 90 €. Valable 6 mois.</p></div>
+        <div class="ticket__price"><b>257 €</b><span>3 × 1h00</span></div>
+      </li>
+      <li class="ticket">
+        <div class="ticket__main"><h3>Carnet Visage · 6 soins</h3><p>Un massage visage d'une heure chaque mois pendant 6 mois. Le soin revient à 81 € au lieu de 90 €. Valable 1 an.</p></div>
+        <div class="ticket__price"><b>486 €</b><span>6 × 1h00</span></div>
+      </li>
+      <li class="ticket">
+        <div class="ticket__main"><h3>Cure Radiofréquence</h3><p>6 séances de 30 min, une par semaine : hydrater, raffermir, lisser et renforcer la qualité de la peau dans le temps.</p></div>
+        <div class="ticket__price"><b>300 €</b><span>6 × 30 min</span></div>
+      </li>
+      <li class="ticket">
+        <div class="ticket__main"><h3>Cure Micro-needling</h3><p>4 séances consécutives, espacées selon l'analyse et le résultat souhaité. Séance supplémentaire à 99 € au lieu de 110 €.</p></div>
+        <div class="ticket__price"><b>396 €</b><span>4 séances</span></div>
+      </li>
+      <li class="ticket ticket--hl">
+        <div class="ticket__main"><h3>Protocole « Peau Nette »</h3><p>6 soins correctifs sur 5 à 7 mois pour rééquilibrer, diminuer l'inflammation, améliorer la texture et prévenir les récidives d'acné. Valeur initiale 500 €. Prévoir 50 à 60 € de produits.</p></div>
+        <div class="ticket__price"><b>440 €</b><span>6 soins</span></div>
+      </li>
+    </ul>
+    <p class="packs__note">Réservation des carnets et cures sur <a class="ulink" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Planity</a>, ou par téléphone au <a class="ulink" href="tel:+33638051558">06 38 05 15 58</a>.</p>
+
+    <div class="gift" id="cadeau">
+      <div class="gift__text">
+        <p class="eyebrow">Carte cadeau</p>
+        <h3 class="gift__title">Offrir du temps, <em>c'est offrir le plus rare.</em></h3>
+        <p>La carte cadeau ne se réserve pas en ligne : on l'organise par message, simplement. Remplissez le formulaire, il prépare votre SMS ou votre e-mail. Vous recevez ensuite le RIB pour un virement instantané, et la carte (PDF) arrive dans la journée. Format papier possible, à régler sur place. Valable 1 an.</p>
+        <p class="gift__warn">Une fois la date dépassée, la carte est perdue : assurez-vous que la personne qui la reçoit prenne bien rendez-vous.</p>
+      </div>
+      <div class="gift__ui">
+        <div class="giftcard tilt" id="giftcard">
+          <span class="glare" aria-hidden="true"></span>
+          <svg class="giftcard__star" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#star"/></svg>
+          <p class="giftcard__brand">Inanna · Facialiste</p>
+          <p class="giftcard__for">Pour <b id="gcTo">vous</b></p>
+          <p class="giftcard__what" id="gcWhat">Un soin sur mesure</p>
+          <p class="giftcard__from">De la part de <b id="gcFrom">quelqu'un qui vous aime</b></p>
+          <p class="giftcard__valid">Valable 1 an · Digne-les-Bains</p>
+        </div>
+        <form class="gform" id="giftForm" novalidate>
+          <label>Pour qui ?<input type="text" id="gfTo" name="to" autocomplete="off" placeholder="Prénom de la personne"></label>
+          <label>De la part de<input type="text" id="gfFrom" name="from" autocomplete="name" placeholder="Votre nom et prénom"></label>
+          <label>Soin ou montant offert
+            <select id="gfWhat" name="what">
+              <option>Un montant libre (à préciser dans le message)</option>
+              <option>L'Éclat · 30 min · 50 €</option>
+              <option>Le Kobido · 1h · 90 €</option>
+              <option>Le Spécifique · 1h · 90 €</option>
+              <option>L'Initial · 40 min · 68 €</option>
+              <option selected>L'Essentiel · 1h · 100 €</option>
+              <option>L'Intense · 1h15 · 125 €</option>
+              <option>Le Profond · 1h30 · 150 €</option>
+              <option>L'Ultime · 2h · 200 €</option>
+              <option>L'Oxylift · 1h · 110 €</option>
+              <option>L'Enveloppant · 1h · 100 €</option>
+              <option>Le Drainant · 130 €</option>
+              <option>Un carnet de soins</option>
+            </select>
+          </label>
+          <label>E-mail pour recevoir la carte (PDF)<input type="email" id="gfMail" name="mail" autocomplete="email" placeholder="adresse@exemple.fr"></label>
+          <label>Format
+            <select id="gfFormat" name="format"><option>PDF par e-mail</option><option>Carte papier, à régler sur place</option></select>
+          </label>
+          <div class="gform__actions">
+            <a class="btn btn--terra magnetic" id="gfSms" href="sms:+33638051558"><span class="btn__in">Envoyer par SMS</span></a>
+            <a class="btn btn--outline magnetic" id="gfMailBtn" href="mailto:contact@skinbyinanna.com"><span class="btn__in">Envoyer par e-mail</span></a>
+          </div>
+          <p class="gform__hint">Rien n'est envoyé depuis ce site : le message s'ouvre dans votre application SMS ou e-mail, prêt à partir.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BON À SAVOIR ============ -->
+<section class="faq" aria-labelledby="faqTitle">
+  <div class="wrap faq__wrap">
+    <header class="faq__head">
+      <p class="eyebrow">Bon à savoir</p>
+      <h2 class="h2" id="faqTitle" data-split>Avant, pendant, <em>après.</em></h2>
+      <p>Tout ce qu'il faut savoir pour que votre moment se passe sans un seul tracas.</p>
+    </header>
+    <div class="faq__list">
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="true" aria-controls="acc-0" id="accb-0"><span>Comment venir&nbsp;?</span><i aria-hidden="true"></i></button>
+        <div class="acc__panel" id="acc-0" role="region" aria-labelledby="accb-0"><div><p>Le salon est au <b>8 rue Colonel Payan</b>, à Digne-les-Bains, au premier étage. Sonnez au <b>3e interphone en partant du bas</b> : l'espace est partagé avec une ostéopathe, c'est la même sonnette. Entrez sans frapper et éteignez votre téléphone. Une salle d'attente et des toilettes sont à votre disposition.</p></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc-1" id="accb-1"><span>Avant le soin</span><i aria-hidden="true"></i></button>
+        <div class="acc__panel" id="acc-1" role="region" aria-labelledby="accb-1"><div><p>Ne lavez pas vos cheveux. Laissez bijoux et lentilles à la maison. Venez de préférence sans maquillage : un démaquillage trop long réduit le temps de massage. Gardez vos produits de soin habituels. Prévenez si vous êtes enceinte, si vous suivez un traitement ou si vous avez vu l'ostéopathe dans les 10 derniers jours.</p></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc-2" id="accb-2"><span>Combien de temps prévoir&nbsp;?</span><i aria-hidden="true"></i></button>
+        <div class="acc__panel" id="acc-2" role="region" aria-labelledby="accb-2"><div><p>Ne prévoyez rien juste après. Votre soin dure peut-être 1h, mais vous pourriez rester 1h30 sur place. Le maître mot chez Inanna est de prendre son temps.</p></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc-3" id="accb-3"><span>Réservation, paiement et annulation</span><i aria-hidden="true"></i></button>
+        <div class="acc__panel" id="acc-3" role="region" aria-labelledby="accb-3"><div><p>La réservation se fait en ligne 24h/24 sur Planity, avec confirmation immédiate. Le paiement total est demandé à la réservation (Planity prélève des frais sur le paiement en ligne). Vous pouvez annuler sans frais jusqu'à 2 jours avant le soin ; passé ce délai, aucun remboursement. Au-delà de 10 minutes de retard, le rendez-vous est automatiquement annulé. Produits et cartes cadeaux se règlent sur place par chèque ou en espèces.</p></div></div>
+      </div>
+      <div class="acc">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc-4" id="accb-4"><span>Première visite et contre-indications</span><i aria-hidden="true"></i></button>
+        <div class="acc__panel" id="acc-4" role="region" aria-labelledby="accb-4"><div><p>Certains soins dermo-esthétiques demandent un premier rendez-vous en amont, et le peeling aux algues ne se réserve pas en première visite. Les peelings et le micro-needling sont déconseillés en cas de grossesse, de coup de soleil, de dermatite ou de psoriasis, d'allergies inflammatoires ou de traitement à l'acide rétinoïque oral. Les consignes complètes sont détaillées à la réservation, et en cas de doute on en parle avant le soin. Les séances de drainage ne sont pas des actes de santé et ne sont pas remboursables.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPEL À L'ACTION ============ -->
+<section class="cta" id="reserver" aria-labelledby="ctaTitle">
+  <video class="cta__video" autoplay muted loop playsinline preload="none" poster="assets/video/steam.jpg" aria-hidden="true">
+    <source data-src="assets/video/steam.mp4" type="video/mp4">
+  </video>
+  <div class="cta__shade" aria-hidden="true"></div>
+  <svg class="cta__badge" viewBox="0 0 160 160" aria-hidden="true">
+    <defs><path id="circ2" d="M80 80m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0"/></defs>
+    <text><textPath href="#circ2">Réservation en ligne 24h/24 ✦ Confirmation immédiate ✦ </textPath></text>
+    <use href="#star" x="56" y="56" width="48" height="48"/>
+  </svg>
+  <div class="wrap cta__wrap">
+    <p class="eyebrow eyebrow--gold">Votre tour</p>
+    <h2 class="cta__title" id="ctaTitle" data-split>Offrez à votre visage le temps qu'il mérite.</h2>
+    <div class="cta__actions">
+      <a class="btn btn--gold btn--lg magnetic" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener" data-cursor="Planity"><span class="btn__in">Réserver en ligne <svg class="ico"><use href="#arrow"/></svg></span></a>
+      <a class="btn btn--ghost btn--lg magnetic" href="tel:+33638051558"><span class="btn__in">Appeler le 06 38 05 15 58</span></a>
+      <a class="btn btn--ghost btn--lg magnetic" href="sms:+33638051558?body=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous."><span class="btn__in">Envoyer un SMS</span></a>
+    </div>
+    <p class="cta__note">Planity vous confirme le rendez-vous immédiatement. Pour une carte cadeau, c'est par message ou par téléphone.</p>
+  </div>
+</section>
+
+<!-- ============ NOUS TROUVER ============ -->
+<section class="find" id="infos" aria-labelledby="findTitle">
+  <div class="wrap find__wrap">
+    <div class="find__map">
+      <div class="find__arch">
+        <iframe title="Carte Google Maps : Inanna Facialiste, 8 rue Colonel Payan, Digne-les-Bains" src="https://www.google.com/maps?q=44.0917079,6.233617&z=17&hl=fr&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+        <a class="find__maplink" href="https://www.google.com/maps/place/Inanna+-+Facialiste/@44.0917079,6.233617,17z/data=!4m6!3m5!1s0x478a3b2aa0cd96b7:0x12f9cb0c03d8dc5d!8m2!3d44.0917079!4d6.233617!16s%2Fg%2F11p9zls93j?entry=ttu" target="_blank" rel="noopener" data-cursor="Ouvrir"><span>Ouvrir dans Google Maps ↗</span></a>
+      </div>
+    </div>
+    <div class="find__info">
+      <p class="eyebrow">Nous trouver</p>
+      <h2 class="h2" id="findTitle" data-split>Au premier étage, <em>sans frapper.</em></h2>
+      <address class="find__addr">
+        <p><b>Inanna · Facialiste</b><br>8 rue Colonel Payan<br>04000 Digne-les-Bains</p>
+        <p class="find__access">3e interphone en partant du bas, premier étage. Entrez sans frapper, éteignez votre téléphone.</p>
+      </address>
+      <div class="find__cols">
+        <div>
+          <h3 class="find__h">Horaires <span class="badge" id="openBadge">—</span></h3>
+          <ul class="hours" id="hours">
+            <li data-d="1"><span>Lundi</span><b>13:00 – 17:30</b></li>
+            <li data-d="2"><span>Mardi</span><b>10:30 – 18:00</b></li>
+            <li data-d="3"><span>Mercredi</span><b>10:30 – 18:00</b></li>
+            <li data-d="4"><span>Jeudi</span><b>10:30 – 18:00</b></li>
+            <li data-d="5"><span>Vendredi</span><b>10:30 – 18:00</b></li>
+            <li data-d="6"><span>Samedi</span><b>10:00 – 13:00</b></li>
+            <li data-d="0"><span>Dimanche</span><b>Fermé</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="find__h">Contact</h3>
+          <ul class="contact">
+            <li><span>Téléphone</span><a class="ulink" href="tel:+33638051558">06 38 05 15 58</a></li>
+            <li><span>E-mail</span><a class="ulink" href="mailto:contact@skinbyinanna.com">contact@skinbyinanna.com</a></li>
+            <li><span>Instagram</span><a class="ulink" href="https://www.instagram.com/skinby.inanna/" target="_blank" rel="noopener">@skinby.inanna</a></li>
+            <li><span>Facebook</span><a class="ulink" href="https://www.facebook.com/skinby.inanna/" target="_blank" rel="noopener">Inanna - Facialiste</a></li>
+          </ul>
+          <a class="btn btn--terra btn--sm magnetic find__route" href="https://www.google.com/maps/dir/?api=1&destination=44.0917079,6.233617" target="_blank" rel="noopener"><span class="btn__in">Itinéraire <svg class="ico"><use href="#arrow"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <p class="foot__tag">La crème de la crème<br>pour votre visage.</p>
+      <nav class="foot__nav" aria-label="Pied de page">
+        <a class="ulink" href="#univers">L'univers</a>
+        <a class="ulink" href="#soins">Les soins</a>
+        <a class="ulink" href="#carte">Tarifs</a>
+        <a class="ulink" href="#avis">Avis</a>
+        <a class="ulink" href="#cadeau">Carte cadeau</a>
+        <a class="ulink" href="#infos">Nous trouver</a>
+      </nav>
+      <div class="foot__social">
+        <a class="ulink" href="https://www.instagram.com/skinby.inanna/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a class="ulink" href="https://www.facebook.com/skinby.inanna/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a class="ulink" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Planity ↗</a>
+        <a class="ulink" href="https://www.google.com/maps/place/Inanna+-+Facialiste/@44.0917079,6.233617,17z/data=!4m6!3m5!1s0x478a3b2aa0cd96b7:0x12f9cb0c03d8dc5d!8m2!3d44.0917079!4d6.233617!16s%2Fg%2F11p9zls93j" target="_blank" rel="noopener">Google Maps ↗</a>
+      </div>
+    </div>
+    <div class="foot__giant" aria-hidden="true">
+      <span class="ch">I</span><span class="ch">n</span><span class="ch">a</span><span class="ch">n</span><span class="ch">n</span><span class="ch">a</span>
+    </div>
+    <div class="foot__bottom">
+      <p>© 2026 Inanna · Facialiste — 8 rue Colonel Payan, 04000 Digne-les-Bains</p>
+      <p>Photos de la cabine : Inanna. Photos des soins : Unsplash. Vidéos d'ambiance : Mixkit (licences libres).</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Barre d'action mobile -->
+<div class="fab" id="fab">
+  <a class="fab__book" href="https://www.planity.com/inanna-facialiste-soin-visage-kobido-intrabuccal-radiofrequence-04000-digne-les-bains" target="_blank" rel="noopener">Réserver</a>
+  <a class="fab__call" href="tel:+33638051558" aria-label="Appeler le 06 38 05 15 58">Appeler</a>
+</div>
+
+<!-- Visionneuse -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie" hidden>
+  <button class="lb__close" type="button" aria-label="Fermer">×</button>
+  <img class="lb__img" alt="">
+</div>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
